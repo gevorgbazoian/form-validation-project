@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Գրանցման ձև</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>Գրանցման ձև</h1>
+
+  <form id="signup-form" novalidate>
+    <div>
+      <label for="name">Անուն / Ազգանուն</label>
+      <input type="text" id="name" required />
+      <small class="error" id="name-error"></small>
+    </div>
+
+    <div>
+      <label for="email">Էլ․ փոստ</label>
+      <input type="email" id="email" required />
+      <small class="error" id="email-error"></small>
+    </div>
+
+    <div>
+      <label for="password">Գաղտնաբառ</label>
+      <input type="password" id="password" required minlength="8" />
+      <small class="error" id="password-error"></small>
+    </div>
+
+    <div>
+      <label for="confirm">Կրկնել գաղտնաբառը</label>
+      <input type="password" id="confirm" required />
+      <small class="error" id="confirm-error"></small>
+    </div>
+
+    <div class="checkbox-row">
+      <label>
+        <input id="terms" type="checkbox" />
+        Համաձայն եմ պայմաններին
+      </label>
+    </div>
+
+    <div>
+      <button type="submit" class="btn" disabled>Գրանցվել</button>
+    </div>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
