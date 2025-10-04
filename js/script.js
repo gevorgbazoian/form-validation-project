@@ -19,28 +19,28 @@ document.addEventListener("DOMContentLoaded", () => {
     let valid = true;
 
     if (nameInput.value.trim().length < 2) {
-      nameError.textContent = "Մուտքագրեք անվան առնվազն 2 տառ";
+      nameError.textContent = "Please enter at least 2 characters for your name";
       valid = false;
     } else {
       nameError.textContent = "";
     }
 
     if (!emailPattern.test(emailInput.value.trim())) {
-      emailError.textContent = "Մուտքագրեք վավեր էլ․ փոստ";
+      emailError.textContent = "Please enter a valid email address";
       valid = false;
     } else {
       emailError.textContent = "";
     }
 
     if (passwordInput.value.length < 8) {
-      passwordError.textContent = "Գաղտնաբառը պետք է լինի առնվազն 8 նիշ";
+      passwordError.textContent = "Password must be at least 8 characters";
       valid = false;
     } else {
       passwordError.textContent = "";
     }
 
     if (confirmInput.value !== passwordInput.value || confirmInput.value === "") {
-      confirmError.textContent = "Գաղտնաբառերը չեն համընկնում";
+      confirmError.textContent = "Passwords do not match";
       valid = false;
     } else {
       confirmError.textContent = "";
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     if (validateForm()) {
-      alert("✅ Գրանցումը հաջողությամբ ավարտվեց!");
+      alert("✅ Registration successful!");
       form.reset();
       submitBtn.disabled = true;
     }
