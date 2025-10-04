@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Գրանցման ձև</title>
+  <title>Signup Form</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <h1>Գրանցման ձև</h1>
+  <h1>Signup Form</h1>
 
   <form id="signup-form" novalidate>
     <div>
-      <label for="name">Անուն / Ազգանուն</label>
+      <label for="name">Name / Surname</label>
       <input type="text" id="name" required />
       <small class="error" id="name-error"></small>
     </div>
 
     <div>
-      <label for="email">Էլ․ փոստ</label>
+      <label for="email">Email</label>
       <input type="email" id="email" required />
       <small class="error" id="email-error"></small>
     </div>
 
     <div>
-      <label for="password">Գաղտնաբառ</label>
+      <label for="password">Password</label>
       <input type="password" id="password" required minlength="8" />
       <small class="error" id="password-error"></small>
     </div>
 
     <div>
-      <label for="confirm">Կրկնել գաղտնաբառը</label>
+      <label for="confirm">Repeat Password</label>
       <input type="password" id="confirm" required />
       <small class="error" id="confirm-error"></small>
     </div>
@@ -38,12 +38,12 @@
     <div class="checkbox-row">
       <label>
         <input id="terms" type="checkbox" />
-        Համաձայն եմ պայմաններին
+        I agree to the terms and conditions.
       </label>
     </div>
 
     <div>
-      <button type="submit" class="btn" disabled>Գրանցվել</button>
+      <button type="submit" class="btn" disabled>Sign up</button>
     </div>
   </form>
 
